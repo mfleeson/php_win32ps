@@ -15,6 +15,12 @@
 
 /* $Id$ */
 
+/*
+   Win32ps is a tiny module which utilizes PSAPI (Process Status Helper) to
+   get information about global memory usage and process specific memory and
+   cpu time utilization.
+*/
+
 #include "php.h"
 #include "ext/standard/info.h"
 #include "php_win32ps.h"
@@ -47,7 +53,7 @@ zend_module_entry win32ps_module_entry = {
 ZEND_GET_MODULE(win32ps)
 #endif
 
-#define php_win32ps_error(message, pid) {php_error_docref(NULL TSRMLS_CC, E_WARNING, "Process Status Error (%d) " message " (PID %d)", GetLastError(), pid);}
+#define php_win32ps_error(message, pid) php_error_docref(NULL TSRMLS_CC, E_WARNING, "Process Status Error (%d) " message " (PID %d)", GetLastError(), pid)
 
 /* {{{ PHP_MINFO_FUNCTION */
 PHP_MINFO_FUNCTION(win32ps)
