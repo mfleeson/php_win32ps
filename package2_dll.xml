@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<package version="2.0" xmlns="http://pear.php.net/dtd/package-2.0"
+ xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="
+  http://pear.php.net/dtd/tasks-1.0
+  http://pear.php.net/dtd/tasks-1.0.xsd
+  http://pear.php.net/dtd/package-2.0
+  http://pear.php.net/dtd/package-2.0.xsd">
+ <name>win32ps_dll</name>
+ <channel>pecl.php.net</channel>
+ <summary>Win32 process and memory stats</summary>
+ <description><![CDATA[
+Win32ps is a tiny module which utilizes PSAPI (Process Status Helper) to
+get information about global memory usage and process specific memory and
+cpu time utilization.
+]]></description>
+ <lead>
+  <name>Michael Wallner</name>
+  <user>mike</user>
+  <email>mike@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2005-00-00</date>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.php.net/license">PHP License</license>
+ <notes><![CDATA[
+* Initial Win32 binary DLL release
+]]></notes>
+ <contents>
+  <dir name="/">
+   <file role="doc" name="win32ps.php"/>
+   <file role="doc" name="CREDITS"/>
+   <dir name="dll">
+    <file role="ext" name="php_win32ps-PHP_4_3.dll"/>
+    <file role="ext" name="php_win32ps-PHP_4_4.dll"/>
+    <file role="ext" name="php_win32ps-PHP_5_0.dll"/>
+    <file role="ext" name="php_win32ps-PHP_5_1.dll"/>
+   </dir>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.3</min>
+    <max>5.1</max>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>win32ps</providesextension>
+ <srcpackage>win32ps</srcpackage>
+ <extbinrelease>
+  <installconditions>
+   <php><min>4.3</min><max>4.4</max><exclude>4.4</exclude></php>
+   <os><name>Windows</name></os>
+  </installconditions>
+  <filelist>
+   <install as="dll/php_win32ps.dll" name="dll/php_win32ps-PHP_4_3.dll"/>
+   <ignore name="dll/php_win32ps-PHP_4_4.dll"/>
+   <ignore name="dll/php_win32ps-PHP_5_0.dll"/>
+   <ignore name="dll/php_win32ps-PHP_5_1.dll"/>
+  </filelist>
+ </extbinrelease>
+ <extbinrelease>
+  <installconditions>
+   <php><min>4.4</min><max>4.5</max><exclude>4.5</exclude></php>
+   <os><name>Windows</name></os>
+  </installconditions>
+  <filelist>
+   <install as="dll/php_win32ps.dll" name="dll/php_win32ps-PHP_4_4.dll"/>
+   <ignore name="dll/php_win32ps-PHP_4_3.dll"/>
+   <ignore name="dll/php_win32ps-PHP_5_0.dll"/>
+   <ignore name="dll/php_win32ps-PHP_5_1.dll"/>
+  </filelist>
+ </extbinrelease>
+ <extbinrelease>
+  <installconditions>
+   <php><min>5.0.3</min><max>5.1</max><exclude>5.1</exclude></php>
+   <os><name>Windows</name></os>
+  </installconditions>
+  <filelist>
+   <install as="dll/php_win32ps.dll" name="dll/php_win32ps-PHP_5_0.dll"/>
+   <ignore name="dll/php_win32ps-PHP_4_3.dll"/>
+   <ignore name="dll/php_win32ps-PHP_4_4.dll"/>
+   <ignore name="dll/php_win32ps-PHP_5_1.dll"/>
+  </filelist>
+ </extbinrelease>
+ <extbinrelease>
+  <installconditions>
+   <php><min>5.1</min><max>5.2</max><exclude>5.2</exclude></php>
+   <os><name>Windows</name></os>
+  </installconditions>
+  <filelist>
+   <install as="dll/php_win32ps.dll" name="dll/php_win32ps-PHP_5_1.dll"/>
+   <ignore name="dll/php_win32ps-PHP_4_3.dll"/>
+   <ignore name="dll/php_win32ps-PHP_4_4.dll"/>
+   <ignore name="dll/php_win32ps-PHP_5_0.dll"/>
+  </filelist>
+ </extbinrelease>
+ <changelog />
+</package>

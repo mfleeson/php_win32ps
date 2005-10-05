@@ -17,7 +17,7 @@ cpu time utilization.
   </maintainers>
  <release>
   <version>1.0.0</version>
-  <date>2005-09-30</date>
+  <date>2005-10-05</date>
   <license>PHP License</license>
   <state>stable</state>
   <notes>* Initial release
