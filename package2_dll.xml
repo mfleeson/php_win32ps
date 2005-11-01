@@ -23,21 +23,22 @@ cpu time utilization.
  </lead>
  <date>2005-00-00</date>
  <version>
-  <release>1.0.0</release>
+  <release>1.0.1</release>
   <api>1.0.0</api>
  </version>
  <stability>
   <release>stable</release>
   <api>stable</api>
  </stability>
- <license uri="http://www.php.net/license">PHP License</license>
+ <license>BSD, revised</license>
  <notes><![CDATA[
-* Initial Win32 binary DLL release
+* Changed license to BSD
 ]]></notes>
  <contents>
   <dir name="/">
    <file role="doc" name="win32ps.php"/>
    <file role="doc" name="CREDITS"/>
+   <file role="doc" name="LICENSE"/>
    <dir name="dll">
     <file role="ext" name="php_win32ps-PHP_4_3.dll"/>
     <file role="ext" name="php_win32ps-PHP_4_4.dll"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
-<package version="1.0" packagerversion="1.4.2">
+<package version="1.0" packagerversion="1.4.3">
  <name>win32ps</name>
  <summary>Win32 process and memory stats</summary>
  <description>Win32ps is a tiny module which utilizes PSAPI (Process Status Helper) to
@@ -16,11 +16,11 @@ cpu time utilization.
   </maintainer>
   </maintainers>
  <release>
-  <version>1.0.0</version>
-  <date>2005-10-05</date>
-  <license>PHP License</license>
+  <version>1.0.1</version>
+  <date>2005-11-01</date>
+  <license>BSD, revised</license>
   <state>stable</state>
-  <notes>* Initial release
+  <notes>* Changed license to BSD
   </notes>
   <deps>
    <dep type="php" rel="ge" version="4.3"/>
@@ -29,6 +29,7 @@ cpu time utilization.
   <filelist>
    <file role="src" name="config.w32"/>
    <file role="doc" name="CREDITS"/>
+   <file role="doc" name="LICENSE"/>
    <file role="src" name="php_win32ps.h"/>
    <file role="src" name="win32ps.c"/>
    <file role="src" name="win32ps.dsp"/>
