@@ -238,7 +238,7 @@ PHP_FUNCTION(win32_ps_list_procs)
 }
 /* }}} */
 
-/* {{{ proto array win32_ps_stat_proc([long pid])
+/* {{{ proto array win32_ps_stat_proc([int pid])
 	Get process info of process with pid or the current process */
 PHP_FUNCTION(win32_ps_stat_proc)
 {
@@ -249,7 +249,7 @@ PHP_FUNCTION(win32_ps_stat_proc)
 	}
 	
 	if (process <= 0) {
-		process = (long) getpid();
+		process = (long) GetCurrentProcessId();
 	}
 	
 	array_init(return_value);
