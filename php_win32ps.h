@@ -18,7 +18,7 @@
 #include <windows.h>
 #include <psapi.h>
 
-#define PHP_WIN32PS_VERSION "1.0"
+#define PHP_WIN32PS_VERSION "1.0.2-dev"
 #define PHP_WIN32PS_MAXPROC 256
 
 /* error flags */
