@@ -66,7 +66,7 @@ PHP_MINFO_FUNCTION(win32ps)
 PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags TSRMLS_DC)
 {
 	char f[MAX_PATH + 1] = {0};
-	zval *mem, *tms;
+	zval mem, tms;
 	int l;
 	HANDLE h;
 	SYSTEMTIME nows;
@@ -137,29 +137,31 @@ PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags 
 		add_assoc_stringl(array, "exe", f, l, 1);
 	}
 	
-	array_init(mem);
-	add_assoc_zval(array, "mem", mem);
+	//MAKE_STD_ZVAL(mem);
+	array_init(&mem);
+	add_assoc_zval(array, "mem", &mem);
 	/* Number of page faults. */
-	add_assoc_long(mem, "page_fault_count", (long) memory.PageFaultCount);
+	add_assoc_long(&mem, "page_fault_count", (long) memory.PageFaultCount);
 	/* Peak working set size, in bytes. */
-	add_assoc_long(mem, "peak_working_set_size", (long) memory.PeakWorkingSetSize);
+	add_assoc_long(&mem, "peak_working_set_size", (long) memory.PeakWorkingSetSize);
 	/* Current working set size, in bytes. */
-	add_assoc_long(mem, "working_set_size", (long) memory.WorkingSetSize);
+	add_assoc_long(&mem, "working_set_size", (long) memory.WorkingSetSize);
 	/* Peak paged pool usage, in bytes. */
-	add_assoc_long(mem, "quota_peak_paged_pool_usage", (long) memory.QuotaPeakPagedPoolUsage);
+	add_assoc_long(&mem, "quota_peak_paged_pool_usage", (long) memory.QuotaPeakPagedPoolUsage);
 	/* Current paged pool usage, in bytes. */
-	add_assoc_long(mem, "quota_paged_pool_usage", (long) memory.QuotaPagedPoolUsage);
+	add_assoc_long(&mem, "quota_paged_pool_usage", (long) memory.QuotaPagedPoolUsage);
 	/* Peak nonpaged pool usage, in bytes. */
-	add_assoc_long(mem, "quota_peak_non_paged_pool_usage", (long) memory.QuotaPeakNonPagedPoolUsage);
+	add_assoc_long(&mem, "quota_peak_non_paged_pool_usage", (long) memory.QuotaPeakNonPagedPoolUsage);
 	/* Current nonpaged pool usage, in bytes. */
-	add_assoc_long(mem, "quota_non_paged_pool_usage", (long) memory.QuotaNonPagedPoolUsage);
+	add_assoc_long(&mem, "quota_non_paged_pool_usage", (long) memory.QuotaNonPagedPoolUsage);
 	/* Current space allocated for the pagefile, in bytes. Those pages may or may not be in memory. */
-	add_assoc_long(mem, "pagefile_usage", (long) memory.PagefileUsage);
+	add_assoc_long(&mem, "pagefile_usage", (long) memory.PagefileUsage);
 	/* Peak space allocated for the pagefile, in bytes. */
-	add_assoc_long(mem, "peak_pagefile_usage", (long) memory.PeakPagefileUsage);
-	
-	array_init(tms);
-	add_assoc_zval(array, "tms", tms);
+	add_assoc_long(&mem, "peak_pagefile_usage", (long) memory.PeakPagefileUsage);
+
+    //MAKE_STD_ZVAL(tms);
+	array_init(&tms);
+	add_assoc_zval(array, "tms", &tms);
 	
 	/* Current time, 100's of nsec */
 	GetSystemTime(&nows);
@@ -168,13 +170,13 @@ PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags 
 	
 	/* Creation time, in seconds with msec precision */
 	memcpy(&creatx, &creat, sizeof(unsigned __int64));
-	add_assoc_double(tms, "created", (double) ((__int64) ((nowx-creatx) / 10000Ui64)) / 1000.0);
+	add_assoc_double(&tms, "created", (double) ((__int64) ((nowx-creatx) / 10000Ui64)) / 1000.0);
 	/* Kernel time, in seconds with msec precision */
 	memcpy(&kernx, &kern, sizeof(unsigned __int64));
-	add_assoc_double(tms, "kernel", (double) ((__int64) (kernx / 10000Ui64)) / 1000.0);
+	add_assoc_double(&tms, "kernel", (double) ((__int64) (kernx / 10000Ui64)) / 1000.0);
 	/* User time, in seconds with msec precision */
 	memcpy(&userx, &user, sizeof(unsigned __int64));
-	add_assoc_double(tms, "user", (double) ((__int64) (userx / 10000Ui64)) / 1000.0);
+	add_assoc_double(&tms, "user", (double) ((__int64) (userx / 10000Ui64)) / 1000.0);
 	
 	return SUCCESS;
 }
@@ -223,11 +225,11 @@ PHP_FUNCTION(win32_ps_list_procs)
 	
 	array_init(return_value);
 	for (i = 0; i < proc_count/sizeof(int); ++i) {
-		zval *entry;
+		zval entry;
 		
-		array_init(entry);
-		if (SUCCESS == php_win32ps_procinfo(processes[i], entry, PHP_WIN32PS_HANDLE_OPS TSRMLS_CC)) {
-			add_next_index_zval(return_value, entry);
+		array_init(&entry);
+		if (SUCCESS == php_win32ps_procinfo(processes[i], &entry, PHP_WIN32PS_HANDLE_OPS TSRMLS_CC)) {
+			add_next_index_zval(return_value, &entry);
 		} else {
 			zval_ptr_dtor(&entry);
 		}
