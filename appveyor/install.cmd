@@ -31,7 +31,7 @@ setlocal enableextensions enabledelayedexpansion
 		git clone -q --depth=1 --branch=PHP-%PHP_REL% https://github.com/php/php-src C:\projects\php-src
 	)
 
-	xcopy %APPVEYOR_BUILD_FOLDER% C:\projects\php-src\ext\win32std\ /s /e /y /f
+	xcopy %APPVEYOR_BUILD_FOLDER% C:\projects\php-src\ext\win32ps\ /s /e /y /f
 
 	rem xcopy %APPVEYOR_BUILD_FOLDER%\LICENSE %APPVEYOR_BUILD_FOLDER%\artifacts\ /y /f
 
@@ -49,7 +49,7 @@ setlocal enableextensions enabledelayedexpansion
 		for /f "delims=" %%l in (wb\wb_version.h) do (
 			if not "%%l"=="" (
 				set line=%%l
-				if "!line:~8,17!"=="win32std_VERSION" (
+				if "!line:~8,17!"=="win32ps_VERSION" (
 					set APPVEYOR_REPO_TAG_NAME=!line:~29,-1!-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_REPO_COMMIT:~0,8%
 				)
 			)
