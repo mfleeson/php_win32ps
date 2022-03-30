@@ -137,7 +137,6 @@ PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags 
 		add_assoc_stringl(array, "exe", f, l, 1);
 	}
 	
-	MAKE_STD_ZVAL(mem);
 	array_init(mem);
 	add_assoc_zval(array, "mem", mem);
 	/* Number of page faults. */
@@ -159,7 +158,6 @@ PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags 
 	/* Peak space allocated for the pagefile, in bytes. */
 	add_assoc_long(mem, "peak_pagefile_usage", (long) memory.PeakPagefileUsage);
 	
-	MAKE_STD_ZVAL(tms);
 	array_init(tms);
 	add_assoc_zval(array, "tms", tms);
 	
@@ -227,7 +225,6 @@ PHP_FUNCTION(win32_ps_list_procs)
 	for (i = 0; i < proc_count/sizeof(int); ++i) {
 		zval *entry;
 		
-		MAKE_STD_ZVAL(entry);
 		array_init(entry);
 		if (SUCCESS == php_win32ps_procinfo(processes[i], entry, PHP_WIN32PS_HANDLE_OPS TSRMLS_CC)) {
 			add_next_index_zval(return_value, entry);
