@@ -50,6 +50,9 @@ setlocal enableextensions enabledelayedexpansion
 		xcopy %APPVEYOR_BUILD_FOLDER%\php %APPVEYOR_BUILD_FOLDER%\php_win32ps-%PHP_REL%-!ZTS_SHORT!-%PHP_BUILD_CRT%-%PHP_SDK_ARCH%\examples\ /y /f
 		rem xcopy %APPVEYOR_BUILD_FOLDER%\build\ext\php_win32ps.dll %APPVEYOR_BUILD_FOLDER%\php_win32ps-%PHP_REL%-!ZTS_SHORT!-%PHP_BUILD_CRT%-%PHP_SDK_ARCH%\ /y /f
 		xcopy %APPVEYOR_BUILD_FOLDER%\build\ext\*.dll %APPVEYOR_BUILD_FOLDER%\php_win32ps-%PHP_REL%-!ZTS_SHORT!-%PHP_BUILD_CRT%-%PHP_SDK_ARCH%\ /y /f
+
+		%APPVEYOR_BUILD_FOLDER%\build\php.exe -dextension_dir=.\ext -dextension=php_win32ps.dll %APPVEYOR_BUILD_FOLDER%\win32ps.php
+
 		7z a php_win32ps-%PHP_REL%-!ZTS_SHORT!-%PHP_BUILD_CRT%-%PHP_SDK_ARCH%.zip %APPVEYOR_BUILD_FOLDER%\php_win32ps-%PHP_REL%-!ZTS_SHORT!-%PHP_BUILD_CRT%-%PHP_SDK_ARCH%\*
 		appveyor PushArtifact php_win32ps-%PHP_REL%-!ZTS_SHORT!-%PHP_BUILD_CRT%-%PHP_SDK_ARCH%.zip -FileName php_win32ps-%APPVEYOR_REPO_TAG_NAME%-%PHP_REL%-!ZTS_SHORT!-%PHP_BUILD_CRT%-%PHP_SDK_ARCH%.zip
 
