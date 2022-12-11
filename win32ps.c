@@ -77,7 +77,7 @@ PHP_MINFO_FUNCTION(win32ps)
 /* }}} */
 
 /* {{{ int php_win32ps_procinfo */
-PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags TSRMLS_DC)
+PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags)
 {
 	char f[MAX_PATH + 1] = {0};
 	zval mem, tms;
@@ -197,7 +197,7 @@ PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags 
 /* }}} */
 
 /* {{{ php_win32ps_meminfo */
-PHP_WIN32PS_API void php_win32ps_meminfo(zval *array TSRMLS_DC)
+PHP_WIN32PS_API void php_win32ps_meminfo(zval *array)
 {
 	MEMORYSTATUSEX memory = {sizeof(MEMORYSTATUSEX)};
 	

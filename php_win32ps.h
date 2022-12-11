@@ -49,8 +49,8 @@ extern zend_module_entry win32ps_module_entry;
 
 PHP_MINFO_FUNCTION(win32ps);
 
-PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags TSRMLS_DC);
-PHP_WIN32PS_API void php_win32ps_meminfo(zval *array TSRMLS_DC);
+PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags);
+PHP_WIN32PS_API void php_win32ps_meminfo(zval *array);
 
 PHP_FUNCTION(win32_ps_list_procs);
 PHP_FUNCTION(win32_ps_stat_proc);
