@@ -64,7 +64,7 @@ zend_module_entry win32ps_module_entry = {
 ZEND_GET_MODULE(win32ps)
 #endif
 
-#define php_win32ps_error(message, pid) php_error_docref(NULL TSRMLS_CC, E_WARNING, "Process Status Error (%d) " message " (PID %d)", GetLastError(), pid)
+#define php_win32ps_error(message, pid) php_error_docref(NULL, E_WARNING, "Process Status Error (%d) " message " (PID %d)", GetLastError(), pid)
 
 /* {{{ PHP_MINFO_FUNCTION */
 PHP_MINFO_FUNCTION(win32ps)
@@ -242,7 +242,7 @@ PHP_FUNCTION(win32_ps_list_procs)
 		zval entry;
 		
 		array_init(&entry);
-		if (SUCCESS == php_win32ps_procinfo(processes[i], &entry, PHP_WIN32PS_HANDLE_OPS TSRMLS_CC)) {
+		if (SUCCESS == php_win32ps_procinfo(processes[i], &entry, PHP_WIN32PS_HANDLE_OPS)) {
 			add_next_index_zval(return_value, &entry);
 		} else {
 			zval_ptr_dtor(&entry);
@@ -268,7 +268,7 @@ PHP_FUNCTION(win32_ps_stat_proc)
 	}
 	
 	array_init(return_value);
-	php_win32ps_procinfo((int) process, return_value, PHP_WIN32PS_ALL TSRMLS_CC);
+	php_win32ps_procinfo((int) process, return_value, PHP_WIN32PS_ALL);
 }
 /* }}} */
 
@@ -281,7 +281,7 @@ PHP_FUNCTION(win32_ps_stat_mem)
 	}
 	
 	array_init(return_value);
-	php_win32ps_meminfo(return_value TSRMLS_CC);
+	php_win32ps_meminfo(return_value);
 }
 /* }}} */
 
