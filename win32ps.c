@@ -258,7 +258,7 @@ PHP_FUNCTION(win32_ps_stat_proc)
 	long process = 0;
 	
 	//if (SUCCESS != zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "|l", &process))
-	ZEND_PARSE_PARAMETERS_START(1, 1)
+	ZEND_PARSE_PARAMETERS_START(0, 1)
 		Z_PARAM_OPTIONAL
 		Z_PARAM_LONG(process)
 	ZEND_PARSE_PARAMETERS_END();
