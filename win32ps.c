@@ -22,11 +22,25 @@
 #include "ext/standard/info.h"
 #include "php_win32ps.h"
 
+
+// PHP 8 arginfo
+ZEND_BEGIN_ARG_INFO_EX(arginfo_win32_ps_list_procs, 0, 0, 1)
+ZEND_ARG_INFO(0, res_rc)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_win32_ps_stat_proc, 0, 0, 1)
+ZEND_ARG_INFO(0, res_rc)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_win32_ps_stat_mem, 0, 0, 1)
+ZEND_ARG_INFO(0, res_rc)
+ZEND_END_ARG_INFO()
+
 /* {{{ win32ps_functions[] */
 zend_function_entry win32ps_functions[] = {
-	PHP_FE(win32_ps_list_procs,		NULL)
-	PHP_FE(win32_ps_stat_proc,		NULL)
-	PHP_FE(win32_ps_stat_mem,		NULL)
+	PHP_FE(win32_ps_list_procs,		arginfo_win32_ps_list_procs)
+	PHP_FE(win32_ps_stat_proc,		arginfo_win32_ps_stat_proc)
+	PHP_FE(win32_ps_stat_mem,		arginfo_win32_ps_stat_mem)
 	{NULL, NULL, NULL}
 };
 /* }}} */
@@ -243,9 +257,11 @@ PHP_FUNCTION(win32_ps_stat_proc)
 {
 	long process = 0;
 	
-	if (SUCCESS != zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "|l", &process)) {
-		RETURN_FALSE;
-	}
+	//if (SUCCESS != zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "|l", &process))
+	ZEND_PARSE_PARAMETERS_START(1, 1)
+		Z_PARAM_OPTIONAL
+		Z_PARAM_LONG(process)
+	ZEND_PARSE_PARAMETERS_END();
 	
 	if (process <= 0) {
 		process = (long) GetCurrentProcessId();
