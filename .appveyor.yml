@@ -88,12 +88,12 @@ after_build:
     echo "Build download archive of build extension and save as artifact..."
     $ts_part = 'ts'
     if ('0' -eq $env:TS) { $ts_part = '-nts' }
-    $zip_bname = 'php_php_win32ps-' + $env:APPVEYOR_REPO_COMMIT.substring(0, 8) + '-' + $env:PHP_VER.substring(0, 3) + '-' + $ts_part + '-' + $env:VC + '-' + $env:ARCH + '.zip'
+    $zip_bname = 'php_win32ps-' + $env:APPVEYOR_REPO_COMMIT.substring(0, 8) + '-' + $env:PHP_VER.substring(0, 3) + '-' + $ts_part + '-' + $env:VC + '-' + $env:ARCH + '.zip'
     $dir = 'c:\projects\php_win32ps\';
     if ('x64' -eq $env:ARCH) { $dir = $dir + 'x64\' }
     $dir = $dir + 'Release'
     if ('1' -eq $env:TS) { $dir = $dir + '_TS' }
-    & 7z a c:\$zip_bname $dir\php_php_win32ps.dll
+    & 7z a c:\$zip_bname $dir\php_win32ps.dll
     Push-AppveyorArtifact c:\$zip_bname
 
 test_script:
