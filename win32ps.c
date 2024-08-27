@@ -31,7 +31,7 @@ ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_stat_proc, 0, 0, IS_ARR
 ZEND_ARG_TYPE_INFO(0, process, IS_LONG, 1)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_stat_proc, 0, 0, IS_ARRAY)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_stat_mem, 0, 0, IS_ARRAY)
 ZEND_END_ARG_INFO()
 
 /* {{{ win32ps_functions[] */
