@@ -253,7 +253,7 @@ PHP_FUNCTION(win32_ps_list_procs)
 	Get process info of process with pid or the current process */
 PHP_FUNCTION(win32_ps_stat_proc)
 {
-	long process = 0;
+	zend_long process = 0;
 	
 	//if (SUCCESS != zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "|l", &process))
 	ZEND_PARSE_PARAMETERS_START(0, 1)
