@@ -24,14 +24,14 @@
 
 
 // PHP 8 arginfo
-ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_list_procs, 0, 1, MAY_BE_ARRAY|MAY_BE_FALSE)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_list_procs, 0, 0, MAY_BE_ARRAY|MAY_BE_FALSE)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_stat_proc, 0, 0, IS_ARRAY)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_win32_ps_stat_proc, 0, 0, IS_ARRAY)
 ZEND_ARG_TYPE_INFO(0, process, IS_LONG, 1)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_stat_mem, 0, 0, IS_ARRAY)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_win32_ps_stat_mem, 0, 0, IS_ARRAY)
 ZEND_END_ARG_INFO()
 
 /* {{{ win32ps_functions[] */
