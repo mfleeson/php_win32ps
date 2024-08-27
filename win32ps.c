@@ -27,11 +27,11 @@
 ZEND_BEGIN_ARG_WITH_RETURN_TYPE_MASK_EX(arginfo_win32_ps_list_procs, 0, 0, MAY_BE_ARRAY|MAY_BE_FALSE)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_win32_ps_stat_proc, 0, 0, IS_ARRAY)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_win32_ps_stat_proc, 0, 0, IS_ARRAY, 0)
 ZEND_ARG_TYPE_INFO(0, process, IS_LONG, 1)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_win32_ps_stat_mem, 0, 0, IS_ARRAY)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_win32_ps_stat_mem, 0, 0, IS_ARRAY, 0)
 ZEND_END_ARG_INFO()
 
 /* {{{ win32ps_functions[] */
@@ -135,18 +135,18 @@ PHP_WIN32PS_API int php_win32ps_procinfo(int proc, zval *array, int error_flags)
 	
 	/* sanitize odd paths */
 	if (!strncmp(f, "\\??\\", 3)) {
-		add_assoc_stringl(array, "exe", &f[4], l - 4, 1);
+		add_assoc_stringl(array, "exe", &f[4], l - 4);
 	} else if (!strncasecmp(f, "\\SystemRoot\\", sizeof("\\SystemRoot\\") - 1)) {
 		char *p, *r;
 		
 		if ((r = getenv("SystemRoot")) || (r = getenv("SYSTEMROOT"))) {
 			l = (int) spprintf(&p, 0, "%s%s", r, &f[sizeof("\\SystemRoot")-1]);
-			add_assoc_stringl(array, "exe", p, l, 0);
+			add_assoc_stringl(array, "exe", p, l);
 		} else {
-			add_assoc_stringl(array, "exe", f, l, 1);
+			add_assoc_stringl(array, "exe", f, l);
 		}
 	} else {
-		add_assoc_stringl(array, "exe", f, l, 1);
+		add_assoc_stringl(array, "exe", f, l);
 	}
 	
 	//MAKE_STD_ZVAL(mem);
