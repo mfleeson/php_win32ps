@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.42.34432.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///e:/bearsampp-development/php_win32ps/php_win32ps/pch.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e61c5ef7a10c4f81b9618db995fb12bfeab845ebf7499e9f7787a1f79336df95"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/bearsampp-development/php_win32ps/php_win32ps/pch.h"
+          },
+          "hashes": {
+            "sha-256": "ced74a2e46c327b8c9474eda8abdb448e92f168311d4b270a55a7c402182ef9e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/bearsampp-development/php_win32ps/php_win32ps/targetver.h"
+          },
+          "hashes": {
+            "sha-256": "c02bf8279b8181aa5c7e32bf5de2c589222dcb2518827f3548541f1202ba8286"
+          }
+        }
+      ]
+    }
+  ]
+}
