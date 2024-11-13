@@ -14,5 +14,3 @@ E:\Bearsampp-development\php_win32ps\php_win32ps\php_win32ps\x64\Release\pri.res
 E:\Bearsampp-development\php_win32ps\php_win32ps\php_win32ps\x64\Release\qualifiers.txt
 E:\Bearsampp-development\php_win32ps\php_win32ps\php_win32ps\x64\Release\qualifiers.txt.intermediate
 E:\Bearsampp-development\php_win32ps\php_win32ps\php_win32ps\x64\Release\MultipleQualifiersPerDimensionFound.txt
-E:\Bearsampp-development\php_win32ps\php_win32ps\x64\Release\php_win32ps\php_win32ps.dll.lastcodeanalysissucceeded
-E:\Bearsampp-development\php_win32ps\php_win32ps\php_win32ps\x64\Release\NativeCodeAnalysis.read.1.tlog
