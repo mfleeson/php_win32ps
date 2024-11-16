@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        "msvc_x64"
+      ],
+      "name": "x64-Release",
+      "includePath": [
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**",
+        "${workspaceRoot}\\php-8.2.25-devel-vs16-x64\\include\\**", // Ensure this path is correct,
+        "${workspaceRoot}\\php-8.2.25-devel-vs16-x64\\include\\main\\**", // Ensure this path is correct
+        "${workspaceRoot}\\php-8.2.25-devel-vs16-x64\\include\\Zend\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "NDEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ]
+}
