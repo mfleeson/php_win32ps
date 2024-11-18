@@ -28,8 +28,8 @@
 #define PHP_DEFAULT_CHARSET "UTF-8"
 
 #include "php_version.h"
-#include "zend.h"
-#include "zend_sort.h"
+#include "..\Zend\zend.h"
+#include "..\Zend\zend_sort.h"
 #include "php_compat.h"
 
 #include "zend_API.h"

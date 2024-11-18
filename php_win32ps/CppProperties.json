@@ -7,10 +7,7 @@
       "name": "x64-Release",
       "includePath": [
         "${env.INCLUDE}",
-        "${workspaceRoot}\\**",
-        "${workspaceRoot}\\php-8.2.25-devel-vs16-x64\\include\\**", // Ensure this path is correct,
-        "${workspaceRoot}\\php-8.2.25-devel-vs16-x64\\include\\main\\**", // Ensure this path is correct
-        "${workspaceRoot}\\php-8.2.25-devel-vs16-x64\\include\\Zend\\**"
+        "${workspaceRoot}\\**"
       ],
       "defines": [
         "WIN32",

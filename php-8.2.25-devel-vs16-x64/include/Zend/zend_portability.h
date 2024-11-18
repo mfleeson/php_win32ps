@@ -20,6 +20,7 @@
 
 #ifndef ZEND_PORTABILITY_H
 #define ZEND_PORTABILITY_H
+#define ZEND_WIN32
 
 #ifdef __cplusplus
 #define BEGIN_EXTERN_C() extern "C" {

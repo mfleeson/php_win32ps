@@ -16,10 +16,11 @@
 
 #include <windows.h>
 #include <psapi.h>
-#include "../../php-8.2.25-devel-vs16-x64/include/main/php.h"
-#include "../../php-8.2.25-devel-vs16-x64/include/Zend/zend.h"
+#include "..\\..\\php-8.2.25-devel-vs16-x64\\include\\main\\php.h"
+#include "..\\..\\php-8.2.25-devel-vs16-x64\\include\\Zend\\zend.h"
+#include "..\\..\\pcre2-10.44\\src\\pcre2_jit_neon_inc.h"
 
-#define PHP_WIN32PS_VERSION "2024-dev"
+#define PHP_WIN32PS_VERSION "2024"
 #define PHP_WIN32PS_MAXPROC 256
 
 /* error flags */

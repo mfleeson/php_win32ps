@@ -20,7 +20,7 @@
 #ifndef ZEND_CONFIG_W32_H
 #define ZEND_CONFIG_W32_H
 
-#include <../main/config.w32.h>
+#include <../Zend/config.w32.h>
 
 #define _CRTDBG_MAP_ALLOC
 

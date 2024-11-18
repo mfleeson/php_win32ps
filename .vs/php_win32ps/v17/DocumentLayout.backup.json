@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "E:\\Bearsampp-development\\php_win32ps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\php_win32ps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\CppProperties.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\CppProperties.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\php_win32ps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.vcxproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\php_win32ps.vcxproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php-8.2.25-devel-vs16-x64\\include\\main\\php.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php-8.2.25-devel-vs16-x64\\include\\main\\php.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\.appveyor.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.appveyor.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\CppProperties.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\CppProperties.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.vcxproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\php_win32ps.vcxproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\php_win32ps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:php_win32ps\\php_win32ps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +38,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "php.h",
+              "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\php-8.2.25-devel-vs16-x64\\include\\main\\php.h",
+              "RelativeDocumentMoniker": "php-8.2.25-devel-vs16-x64\\include\\main\\php.h",
+              "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\php-8.2.25-devel-vs16-x64\\include\\main\\php.h",
+              "RelativeToolTip": "php-8.2.25-devel-vs16-x64\\include\\main\\php.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-18T15:44:17.306Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,66 +61,40 @@
               "RelativeDocumentMoniker": "php_win32ps\\php_win32ps.vcxproj",
               "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.vcxproj",
               "RelativeToolTip": "php_win32ps\\php_win32ps.vcxproj",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAAALoAAABvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000698|",
               "WhenOpened": "2024-11-16T09:57:27.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "pch.h",
-              "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\pch.h",
-              "RelativeDocumentMoniker": "php_win32ps\\pch.h",
-              "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\pch.h",
-              "RelativeToolTip": "php_win32ps\\pch.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-16T09:55:03.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "pch.cpp",
-              "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\pch.cpp",
-              "RelativeDocumentMoniker": "php_win32ps\\pch.cpp",
-              "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\pch.cpp",
-              "RelativeToolTip": "php_win32ps\\pch.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-16T09:55:00.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": ".appveyor.yml",
               "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\.appveyor.yml",
               "RelativeDocumentMoniker": ".appveyor.yml",
               "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\.appveyor.yml",
               "RelativeToolTip": ".appveyor.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2024-11-16T09:52:39.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CppProperties.json",
               "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\CppProperties.json",
               "RelativeDocumentMoniker": "php_win32ps\\CppProperties.json",
               "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\CppProperties.json",
               "RelativeToolTip": "php_win32ps\\CppProperties.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-16T09:52:16.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "dllmain.cpp",
               "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\dllmain.cpp",
               "RelativeDocumentMoniker": "php_win32ps\\dllmain.cpp",
@@ -123,34 +102,39 @@
               "RelativeToolTip": "php_win32ps\\dllmain.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-16T09:52:05.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T09:52:05.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "php_win32ps.h",
               "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.h",
               "RelativeDocumentMoniker": "php_win32ps\\php_win32ps.h",
               "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.h",
               "RelativeToolTip": "php_win32ps\\php_win32ps.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-16T09:49:53.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T09:49:53.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "php_win32ps.cpp",
               "DocumentMoniker": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.cpp",
               "RelativeDocumentMoniker": "php_win32ps\\php_win32ps.cpp",
               "ToolTip": "E:\\Bearsampp-development\\php_win32ps\\php_win32ps\\php_win32ps.cpp",
               "RelativeToolTip": "php_win32ps\\php_win32ps.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-16T09:49:50.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T09:49:50.222Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
