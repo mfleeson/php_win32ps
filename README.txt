@@ -1,4 +1,3 @@
-## Built for php 8.2.26
 
 Compile and Build win32ps
 =========================
