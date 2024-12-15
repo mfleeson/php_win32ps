@@ -1,0 +1,20 @@
+
+# objects for EXT win32ps
+
+$(BUILD_DIR)\\win32ps.obj: D:\Mark\Documents\GitHub\new_php_win32ps\win32ps\win32ps.c
+	$(CC) $(CFLAGS_WIN32PS_OBJ) $(CFLAGS) /Fo$(BUILD_DIR)\\ $(CFLAGS_BD_) /c D:\Mark\Documents\GitHub\new_php_win32ps\win32ps\win32ps.c 
+
+$(BUILD_DIR)\php_win32ps.dll.res: $(PHP_DIR)\build\template.rc
+	$(RC) /nologo  $(BASE_INCLUDES) /I $(PHP_DIR)/include /n /fo $(BUILD_DIR)\php_win32ps.dll.res /d FILE_DESCRIPTION="\"win32ps\"" /d FILE_NAME="\"php_win32ps.dll\"" /d URL="\"https://www.php.net\"" /d INTERNAL_NAME="\"WIN32PS extension\"" /d THANKS_GUYS="\"Thanks to Michael Wallner\"" $(PHP_DIR)\build\template.rc
+
+$(BUILD_DIR)\php_win32ps.dll.manifest: c:\build-cache\php-8.2.26-devel-vs16-x64\php-8.2.26-devel-vs16-x64\build\default.manifest
+	@copy c:\build-cache\php-8.2.26-devel-vs16-x64\php-8.2.26-devel-vs16-x64\build\default.manifest $(BUILD_DIR)\php_win32ps.dll.manifest >nul
+$(BUILD_DIR)\php_win32ps.lib: $(BUILD_DIR)\php_win32ps.dll
+
+$(BUILD_DIR)\php_win32ps.dll: $(DEPS_WIN32PS) $(WIN32PS_GLOBAL_OBJS) $(PHPLIB) $(BUILD_DIR)\php_win32ps.dll.res $(BUILD_DIR)\php_win32ps.dll.manifest
+	"$(LINK)" $(WIN32PS_GLOBAL_OBJS_RESP) $(PHPLIB) $(LIBS_WIN32PS) $(LIBS) $(BUILD_DIR)\php_win32ps.dll.res /out:$(BUILD_DIR)\php_win32ps.dll $(DLL_LDFLAGS) $(LDFLAGS) $(LDFLAGS_WIN32PS)
+	-@$(_VC_MANIFEST_EMBED_DLL)
+
+php_win32ps.dll: $(BUILD_DIR)\php_win32ps.dll
+	@echo EXT win32ps build complete
+

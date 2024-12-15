@@ -1,0 +1,15 @@
+// $Id$
+// vim:ft=javascript
+
+ARG_WITH("win32ps", "enable win32ps support", "yes");
+
+if (PHP_WIN32PS == "yes") {
+	if (	CHECK_HEADER_ADD_INCLUDE("psapi.h", "CFLAGS_WIN32PS") && 
+			CHECK_LIB("psapi.lib", "win32ps", PHP_WIN32PS)) {
+		EXTENSION("win32ps", "win32ps.c");
+			AC_DEFINE('HAVE_WIN32PS', 1, 'Include Win32PS support', false);
+	}
+}
+
+
+

@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  dllmain.cpp
+  php_win32ps.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  php_win32ps.vcxproj -> E:\Bearsampp-development\php_win32ps\php_win32ps\x64\Release\php_win32ps\php_win32ps.dll
