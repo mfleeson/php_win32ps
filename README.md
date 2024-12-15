@@ -8,10 +8,10 @@ You will need windows Powershell and Visual Studio 2019 and Git CLI
 
 in a command window type:
 
-winget search Microsoft.PowerShell
+`winget search Microsoft.PowerShell`
 
 Run PowerShell.
-
+<pre>
 copy/paste 
 ;
 if (-not (Test-Path c:\build-cache)) {
@@ -46,6 +46,4 @@ c:\build-cache\php-sdk-2.3.0\php-sdk-binary-tools-php-sdk-2.3.0\phpsdk-vs16-x64.
 nmake
 ;
 dir x64\Release_TS
-       
-
-
+</pre>
